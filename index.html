@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Gerenciamento de Cursos</title>
+</head>
+
+<body>
+    <!-- Seção de Cabeçalho -->
+    <header>
+        <div class="title">
+            <h1>Gerenciamento de Cursos</h1>
+        </div>
+        <div class="banner">
+            <img src="img/professor.png" alt="Banner">
+        </div>
+    </header>
+
+    <!-- Seção para adicionar novo curso -->
+    <section class="newItem">
+        <div class="form-row">
+            <label for="nomeCurso">Nome do Curso:</label>
+            <input type="text" id="nomeCurso">
+        </div>
+        <div class="form-row flex-container">
+            <div class="flex-item">
+                <label for="nivelCurso">Nível do Curso:</label>
+                <input type="text" id="nivelCurso">
+            </div>
+            <div class="flex-item">
+                <label for="instituicao">Instituição:</label>
+                <input type="text" id="instituicao">
+            </div>
+        </div>
+        <div class="form-row flex-container">
+            <div class="flex-item">
+                <label for="anoInicio">Ano de Início:</label>
+                <input type="number" id="anoInicio">
+            </div>
+            <div class="flex-item">
+                <label for="anoTermino">Ano de Término:</label>
+                <input type="number" id="anoTermino">
+            </div>
+        </div>
+        <div class="form-row flex-container">
+            <div class="flex-item">
+                <label for="situacao">Situação:</label>
+                <select id="situacao" required>
+                    <option value="" disabled selected>Selecione a situação</option>
+                    <option value="andamento">Andamento</option>
+                    <option value="finalizado">Finalizado</option>
+                </select>
+            </div>
+            <div class="flex-item">
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor">
+            </div>
+        </div>
+        <div class="form-row">
+            <button onclick="adicionarCurso()" class="addBtn">Cadastrar</button>
+        </div>
+    </section>
+
+    <!-- Seção para tabela com cursos que já existem -->
+    <section class="items">
+        <table id="tabelaCursos">
+            <thead>
+                <tr>
+                    <th>Nome do Curso</th>
+                    <th>Nível do Curso</th>
+                    <th>Instituição</th>
+                    <th>Ano de Início</th>
+                    <th>Ano de Término</th>
+                    <th>Situação</th>
+                    <th>Valor</th>
+                    <th>Operações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As linhas da tabela serão adicionadas dinamicamente com JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

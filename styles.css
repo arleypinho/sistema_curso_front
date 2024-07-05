@@ -1,0 +1,126 @@
+/* Estilos para o cabeçalho */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+header .title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.banner img {
+    border-radius: 50px;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Estilizando o formulário de adicionar novo curso */
+.newItem {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.newItem .form-row {
+    margin-bottom: 10px;
+}
+
+.newItem .flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newItem .flex-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.newItem .flex-item:last-child {
+    margin-right: 0;
+}
+
+.newItem label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.newItem input[type="text"],
+.newItem input[type="number"],
+.newItem select {
+    padding: 10px;
+    width: 100%;
+}
+
+.newItem .addBtn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.newItem .addBtn:hover {
+    background-color: #45a049;
+    border-radius: 10px;
+}
+
+/* Estilizando a tabela de cursos */
+.items {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.items th,
+.items td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.items th {
+    background-color: #3498db;
+    color: white;
+}
+
+.items tr:hover {
+    background-color: #f5f5f5;
+}
+
+.items td:last-child {
+    text-align: center;
+}
+
+.items td:last-child button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.items td:last-child button:hover {
+    background-color: #da190b;
+}
